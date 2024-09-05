@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
 import AnimatedPage from "../utils/AnimatedPage";
+import ImageLogo from "../utils/ImageLogo";
 
 const PupopForm = ({ userData, setIsPupopAppear }) => {
   const [isPending, setIsPending] = useState(false);
@@ -96,14 +97,10 @@ const PupopForm = ({ userData, setIsPupopAppear }) => {
           {showChangePasswordPage ? (
             <div className="changePasswordPupop">
               <AnimatedPage>
-                <img
-                  src="https://cdn.pixabay.com/photo/2017/06/19/04/31/logo-2418158_1280.png"
-                  alt=""
+                <ImageLogo
+                  header="Change Password"
+                  desc="Create A Strong Unforgatble Password"
                 />
-                <h3 className="header">Change Password</h3>
-                <div className="desc-page">
-                  Create A Strong Unforgatble Password
-                </div>
                 <form
                   onSubmit={handleSubmit(updatePassord)}
                   onChange={() => clearErrors("apiError")}
