@@ -11,6 +11,7 @@ import { useDispatch } from "react-redux";
 import { setUserAuthenticate } from "../../states/accessProfilePage";
 import { useNavigate } from "react-router-dom";
 import AnimatedPage from "../utils/AnimatedPage";
+import ImageLogo from "../utils/ImageLogo";
 
 const LoginPage = () => {
   const [isPending, setIsPending] = useState(false);
@@ -80,12 +81,7 @@ const LoginPage = () => {
         </div>
       )}
       <div className="container-authPage">
-        <img
-          src="https://cdn.pixabay.com/photo/2017/06/19/04/31/logo-2418158_1280.png"
-          alt=""
-        />
-        <h3 className="header">Sign in</h3>
-        <div className="desc-page">Use your Google Account</div>
+        <ImageLogo header="Sign in" desc="Use your Google Account" />
         <form
           onSubmit={handleSubmit(submitForm)}
           onChange={() => clearErrors("apiError")}
