@@ -30,9 +30,10 @@ html {
 }
 
 img {
-  width: 7rem;
+  width: 15rem;
   height: 7rem;
   border-radius: 50%;
+  align-self: end;
 }
 
 /* general page */
