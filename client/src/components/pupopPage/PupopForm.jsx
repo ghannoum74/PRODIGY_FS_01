@@ -97,10 +97,15 @@ const PupopForm = ({ userData, setIsPupopAppear }) => {
           {showChangePasswordPage ? (
             <div className="changePasswordPupop">
               <AnimatedPage>
-                <ImageLogo
-                  header="Change Password"
-                  desc="Create A Strong Unforgatble Password"
+                <img
+                  style={{ marginLeft: "9rem" }}
+                  src="https://prodigyinfotech.dev/assets/images/logo/logo.svg"
+                  alt="invalid"
                 />
+                <h3 className="header">Change Password</h3>
+                <div className="desc-page">
+                  Create A Strong Unforgatble Password
+                </div>
                 <form
                   onSubmit={handleSubmit(updatePassord)}
                   onChange={() => clearErrors("apiError")}
