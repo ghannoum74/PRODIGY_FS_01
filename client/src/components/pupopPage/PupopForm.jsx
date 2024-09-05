@@ -181,12 +181,7 @@ const PupopForm = ({ userData, setIsPupopAppear }) => {
             </div>
           ) : (
             <>
-              <img
-                src="https://cdn.pixabay.com/photo/2017/06/19/04/31/logo-2418158_1280.png"
-                alt=""
-              />
-              <h3 className="header">Sign in</h3>
-              <div className="desc-page">Use your Google Account</div>
+              <ImageLogo header="Sign in" desc="Use your Google Account" />
               <form
                 onSubmit={handleSubmit(submitForm)}
                 onChange={() => clearErrors("apiError")}
