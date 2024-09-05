@@ -4,7 +4,7 @@ const ImageLogo = ({ header, desc }) => {
   return (
     <>
       <img
-        src="https://cdn.pixabay.com/photo/2017/06/19/04/31/logo-2418158_1280.png"
+        src="https://prodigyinfotech.dev/assets/images/logo/logo.svg"
         alt="invalid"
       />
       <h3 className="header">{header}</h3>
